@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <br>
+    <p><b>js file created: </b><%= btime %></p>
+    <p><b>js file changed: </b><%= mtime %></p>
+    <p><b>ejs file created: </b><%= btime2 %></p>
+    <p><b>ejs file changed: </b><%= mtime2 %></p>
+    <br>
+    <p><b>ㅁ Date & Time in Different Formats</b></p>
+    <br>
+    <p><b>Date.now(): </b><%= Date.now() %></p>
+    <p><b>new Date().toString(): </b><%= new Date().toString() %></p>
+    <p><b>new Date().toISOString().replace('T', ' ').substr(0, 19): </b><%= new Date().toISOString().replace('T', ' ').substr(0, 19) %></p>
+    <p><b>new Date().toUTCString(): </b><%= new Date().toUTCString() %></p>
+    <br>
+    <p><b>new Date().toLocaleString('ar-SA')</b> * Replace 'ar-SA' with the language[-country] code.</p>
+    <p><b>ar-SA: </b><%= new Date().toLocaleString('ar-SA') %></p>
+    <p><b>bn-BD: </b><%= new Date().toLocaleString('bn-BD') %></p>
+    <p><b>bn-IN: </b><%= new Date().toLocaleString('bn-IN') %></p>
+    <p><b>cs-CZ: </b><%= new Date().toLocaleString('cs-CZ') %></p>
+    <p><b>da-DK: </b><%= new Date().toLocaleString('da-DK') %></p>
+    <p><b>de-AT: </b><%= new Date().toLocaleString('de-AT') %></p>
+    <p><b>de-CH: </b><%= new Date().toLocaleString('de-CH') %></p>
+    <p><b>de-DE: </b><%= new Date().toLocaleString('de-DE') %></p>
+    <p><b>el-GR: </b><%= new Date().toLocaleString('el-GR') %></p>
+    <p><b>en-AU: </b><%= new Date().toLocaleString('en-AU') %></p>
+    <p><b>en-CA: </b><%= new Date().toLocaleString('en-CA') %></p>
+    <p><b>en-GB: </b><%= new Date().toLocaleString('en-GB') %></p>
+    <p><b>en-IE: </b><%= new Date().toLocaleString('en-IE') %></p>
+    <p><b>en-IN: </b><%= new Date().toLocaleString('en-IN') %></p>
+    <p><b>en-NZ: </b><%= new Date().toLocaleString('en-NZ') %></p>
+    <p><b>en-US: </b><%= new Date().toLocaleString('en-US') %></p>
+    <p><b>en-ZA: </b><%= new Date().toLocaleString('en-ZA') %></p>
+    <p><b>es-AR: </b><%= new Date().toLocaleString('es-AR') %></p>
+    <p><b>es-CL: </b><%= new Date().toLocaleString('es-CL') %></p>
+    <p><b>es-CO: </b><%= new Date().toLocaleString('es-CO') %></p>
+    <p><b>es-ES: </b><%= new Date().toLocaleString('es-ES') %></p>
+    <p><b>es-MX: </b><%= new Date().toLocaleString('es-MX') %></p>
+    <p><b>es-US: </b><%= new Date().toLocaleString('es-US') %></p>
+    <p><b>fi-FI: </b><%= new Date().toLocaleString('fi-FI') %></p>
+    <p><b>fr-BE: </b><%= new Date().toLocaleString('fr-BE') %></p>
+    <p><b>fr-CA: </b><%= new Date().toLocaleString('fr-CA') %></p>
+    <p><b>fr-CH: </b><%= new Date().toLocaleString('fr-CH') %></p>
+    <p><b>fr-FR: </b><%= new Date().toLocaleString('fr-FR') %></p>
+    <p><b>he-IL: </b><%= new Date().toLocaleString('he-IL') %></p>
+    <p><b>hi-IN: </b><%= new Date().toLocaleString('hi-IN') %></p>
+    <p><b>hu-HU: </b><%= new Date().toLocaleString('hu-HU') %></p>
+    <p><b>id-ID: </b><%= new Date().toLocaleString('id-ID') %></p>
+    <p><b>it-CH: </b><%= new Date().toLocaleString('it-CH') %></p>
+    <p><b>it-IT: </b><%= new Date().toLocaleString('it-IT') %></p>
+    <p><b>ja-JP: </b><%= new Date().toLocaleString('ja-JP') %></p>
+    <p><b>ko-KR: </b><%= new Date().toLocaleString('ko-KR') %></p>
+    <p><b>nl-BE: </b><%= new Date().toLocaleString('nl-BE') %></p>
+    <p><b>nl-NL: </b><%= new Date().toLocaleString('nl-NL') %></p>
+    <p><b>no-NO: </b><%= new Date().toLocaleString('no-NO') %></p>
+    <p><b>pl-PL: </b><%= new Date().toLocaleString('pl-PL') %></p>
+    <p><b>pt-BR: </b><%= new Date().toLocaleString('pt-BR') %></p>
+    <p><b>pt-PT: </b><%= new Date().toLocaleString('pt-PT') %></p>
+    <p><b>ro-RO: </b><%= new Date().toLocaleString('ro-RO') %></p>
+    <p><b>ru-RU: </b><%= new Date().toLocaleString('ru-RU') %></p>
+    <p><b>sk-SK: </b><%= new Date().toLocaleString('sk-SK') %></p>
+    <p><b>sv-SE: </b><%= new Date().toLocaleString('sv-SE') %></p>
+    <p><b>ta-IN: </b><%= new Date().toLocaleString('ta-IN') %></p>
+    <p><b>ta-LK: </b><%= new Date().toLocaleString('ta-LK') %></p>
+    <p><b>th-TH: </b><%= new Date().toLocaleString('th-TH') %></p>
+    <p><b>tr-TR: </b><%= new Date().toLocaleString('tr-TR') %></p>
+    <p><b>zh-CN: </b><%= new Date().toLocaleString('zh-CN') %></p>
+    <p><b>zh-HK: </b><%= new Date().toLocaleString('zh-HK') %></p>
+    <p><b>zh-TW: </b><%= new Date().toLocaleString('zh-TW') %></p>
+    <p><b>bg: </b><%= new Date().toLocaleString('bg') %></p>
+    <p><b>el: </b><%= new Date().toLocaleString('el') %></p>
+    <br>
+    <p><b>ㅁ Currency for Different Countries</b></p>
+    <p><b>Usage - sampleNumber.toLocaleString('[language_code]]', {style:'currency', currency:'[currency_code]'})</b></p>
+    <br>
+    <p><b>ar-SA: sampleNumber.toLocaleString('ar-SA', {style:'currency', currency:'SAR'}) // </b><%= sampleNumber.toLocaleString('ar-SA', {style:'currency', currency:'SAR'}) %></p>
+    <p><b>bn-BD: sampleNumber.toLocaleString('bn-BD', {style:'currency', currency:'BDT'}) // </b><%= sampleNumber.toLocaleString('bn-BD', {style:'currency', currency:'BDT'}) %></p>
+    <p><b>bn-IN: sampleNumber.toLocaleString('bn-BD', {style:'currency', currency:'BDT'}) // </b><%= sampleNumber.toLocaleString('bn-BD', {style:'currency', currency:'BDT'}) %></p>
+    <p><b>cs-CZ: sampleNumber.toLocaleString('cs-CZ', {style:'currency', currency:'CZK'}) // </b><%= sampleNumber.toLocaleString('cs-CZ', {style:'currency', currency:'CZK'}) %></p>
+    <p><b>da-DK: sampleNumber.toLocaleString('da-DK', {style:'currency', currency:'DKK'}) // </b><%= sampleNumber.toLocaleString('da-DK', {style:'currency', currency:'DKK'}) %></p>
+    <p><b>de-AT: sampleNumber.toLocaleString('de-AT', {style:'currency', currency:'EUR'}) // </b><%= sampleNumber.toLocaleString('de-AT', {style:'currency', currency:'EUR'}) %></p>
+    <p><b>de-CH: sampleNumber.toLocaleString('de-CH', {style:'currency', currency:'CHF'}) // </b><%= sampleNumber.toLocaleString('de-CH', {style:'currency', currency:'CHF'}) %></p>
+    <p><b>de-DE: sampleNumber.toLocaleString('de-DE', {style:'currency', currency:'EUR'}) // </b><%= sampleNumber.toLocaleString('de-DE', {style:'currency', currency:'EUR'}) %></p>
+    <p><b>el-GR: sampleNumber.toLocaleString('el-GR', {style:'currency', currency:'EUR'}) // </b><%= sampleNumber.toLocaleString('el-GR', {style:'currency', currency:'EUR'}) %></p>
+    <p><b>en-AU: sampleNumber.toLocaleString('en-AU', {style:'currency', currency:'AUD'}) // </b><%= sampleNumber.toLocaleString('en-AU', {style:'currency', currency:'AUD'}) %></p>
+    <p><b>en-CA: sampleNumber.toLocaleString('en-CA', {style:'currency', currency:'CAD'}) // </b><%= sampleNumber.toLocaleString('en-CA', {style:'currency', currency:'CAD'}) %></p>
+    <p><b>en-GB: sampleNumber.toLocaleString('en-GB', {style:'currency', currency:'GBP'}) // </b><%= sampleNumber.toLocaleString('en-GB', {style:'currency', currency:'GBP'}) %></p>
+    <p><b>en-IE: sampleNumber.toLocaleString('en-IE', {style:'currency', currency:'EUR'}) // </b><%= sampleNumber.toLocaleString('en-IE', {style:'currency', currency:'EUR'}) %></p>
+    <p><b>en-IN: sampleNumber.toLocaleString('en-IN', {style:'currency', currency:'INR'}) // </b><%= sampleNumber.toLocaleString('en-IN', {style:'currency', currency:'INR'}) %></p>
+    <p><b>en-NZ: sampleNumber.toLocaleString('en-NZ', {style:'currency', currency:'NZD'}) // </b><%= sampleNumber.toLocaleString('en-NZ', {style:'currency', currency:'NZD'}) %></p>
+    <p><b>en-US: sampleNumber.toLocaleString('en-US', {style:'currency', currency:'USD'}) // </b><%= sampleNumber.toLocaleString('en-US', {style:'currency', currency:'USD'}) %></p>
+    <p><b>en-ZA: sampleNumber.toLocaleString('en-ZA', {style:'currency', currency:'ZAR'}) // </b><%= sampleNumber.toLocaleString('en-ZA', {style:'currency', currency:'ZAR'}) %></p>
+    <p><b>es-AR: sampleNumber.toLocaleString('es-AR', {style:'currency', currency:'ARS'}) // </b><%= sampleNumber.toLocaleString('es-AR', {style:'currency', currency:'ARS'}) %></p>
+    <p><b>es-CL: sampleNumber.toLocaleString('es-CL', {style:'currency', currency:'CLP'}) // </b><%= sampleNumber.toLocaleString('es-CL', {style:'currency', currency:'CLP'}) %></p>
+    <p><b>es-CO: sampleNumber.toLocaleString('es-CO', {style:'currency', currency:'COP'}) // </b><%= sampleNumber.toLocaleString('es-CO', {style:'currency', currency:'COP'}) %></p>
+    <p><b>es-ES: sampleNumber.toLocaleString('es-ES', {style:'currency', currency:'EUR'}) // </b><%= sampleNumber.toLocaleString('es-ES', {style:'currency', currency:'EUR'}) %></p>
+    <p><b>es-MX: sampleNumber.toLocaleString('es-MX', {style:'currency', currency:'MXN'}) // </b><%= sampleNumber.toLocaleString('es-MX', {style:'currency', currency:'MXN'}) %></p>
+    <p><b>es-US: sampleNumber.toLocaleString('es-MX', {style:'currency', currency:'MXN'}) // </b><%= sampleNumber.toLocaleString('es-MX', {style:'currency', currency:'MXN'}) %></p>
+    <p><b>fi-FI: sampleNumber.toLocaleString('fi-FI', {style:'currency', currency:'EUR'}) // </b><%= sampleNumber.toLocaleString('fi-FI', {style:'currency', currency:'EUR'}) %></p>
+    <p><b>fr-BE: sampleNumber.toLocaleString('fr-BE', {style:'currency', currency:'EUR'}) // </b><%= sampleNumber.toLocaleString('fr-BE', {style:'currency', currency:'EUR'}) %></p>
+    <p><b>fr-CA: sampleNumber.toLocaleString('fr-CA', {style:'currency', currency:'CAD'}) // </b><%= sampleNumber.toLocaleString('fr-CA', {style:'currency', currency:'CAD'}) %></p>
+    <p><b>fr-CH: sampleNumber.toLocaleString('fr-CH', {style:'currency', currency:'CHF'}) // </b><%= sampleNumber.toLocaleString('fr-CH', {style:'currency', currency:'CHF'}) %></p>
+    <p><b>fr-FR: sampleNumber.toLocaleString('fr-FR', {style:'currency', currency:'EUR'}) // </b><%= sampleNumber.toLocaleString('fr-FR', {style:'currency', currency:'EUR'}) %></p>
+    <p><b>he-IL: sampleNumber.toLocaleString('he-IL', {style:'currency', currency:'ILS'}) // </b><%= sampleNumber.toLocaleString('he-IL', {style:'currency', currency:'ILS'}) %></p>
+    <p><b>hi-IN: sampleNumber.toLocaleString('hi-IN', {style:'currency', currency:'INR'}) // </b><%= sampleNumber.toLocaleString('hi-IN', {style:'currency', currency:'INR'}) %></p>
+    <p><b>hu-HU: sampleNumber.toLocaleString('hu-HU', {style:'currency', currency:'HUF'}) // </b><%= sampleNumber.toLocaleString('hu-HU', {style:'currency', currency:'HUF'}) %></p>
+    <p><b>id-ID: sampleNumber.toLocaleString('id-ID', {style:'currency', currency:'IDR'}) // </b><%= sampleNumber.toLocaleString('id-ID', {style:'currency', currency:'IDR'}) %></p>
+    <p><b>it-CH: sampleNumber.toLocaleString('it-CH', {style:'currency', currency:'CHF'}) // </b><%= sampleNumber.toLocaleString('it-CH', {style:'currency', currency:'CHF'}) %></p>
+    <p><b>it-IT: sampleNumber.toLocaleString('it-IT', {style:'currency', currency:'EUR'}) // </b><%= sampleNumber.toLocaleString('it-IT', {style:'currency', currency:'EUR'}) %></p>
+    <p><b>ja-JP: sampleNumber.toLocaleString('ja-JP', {style:'currency', currency:'JPY'}) // </b><%= sampleNumber.toLocaleString('ja-JP', {style:'currency', currency:'JPY'}) %></p>
+    <p><b>ko-KR: sampleNumber.toLocaleString('ko-KR', {style:'currency', currency:'KRW'}) // </b><%= sampleNumber.toLocaleString('ko-KR', {style:'currency', currency:'KRW'}) %></p>
+    <p><b>nl-BE: sampleNumber.toLocaleString('nl-BE', {style:'currency', currency:'EUR'}) // </b><%= sampleNumber.toLocaleString('nl-BE', {style:'currency', currency:'EUR'}) %></p>
+    <p><b>nl-NL: sampleNumber.toLocaleString('nl-NL', {style:'currency', currency:'EUR'}) // </b><%= sampleNumber.toLocaleString('nl-NL', {style:'currency', currency:'EUR'}) %></p>
+    <p><b>no-NO: sampleNumber.toLocaleString('no-NO', {style:'currency', currency:'NOK'}) // </b><%= sampleNumber.toLocaleString('no-NO', {style:'currency', currency:'NOK'}) %></p>
+    <p><b>pl-PL: sampleNumber.toLocaleString('pl-PL', {style:'currency', currency:'PLN'}) // </b><%= sampleNumber.toLocaleString('pl-PL', {style:'currency', currency:'PLN'}) %></p>
+    <p><b>pt-BR: sampleNumber.toLocaleString('pt-BR', {style:'currency', currency:'BRL'}) // </b><%= sampleNumber.toLocaleString('pt-BR', {style:'currency', currency:'BRL'}) %></p>
+    <p><b>pt-PT: sampleNumber.toLocaleString('pt-PT', {style:'currency', currency:'EUR'}) // </b><%= sampleNumber.toLocaleString('pt-PT', {style:'currency', currency:'EUR'}) %></p>
+    <p><b>ro-RO: sampleNumber.toLocaleString('ro-RO', {style:'currency', currency:'RON'}) // </b><%= sampleNumber.toLocaleString('ro-RO', {style:'currency', currency:'RON'}) %></p>
+    <p><b>ru-RU: sampleNumber.toLocaleString('ru-RU', {style:'currency', currency:'RUB'}) // </b><%= sampleNumber.toLocaleString('ru-RU', {style:'currency', currency:'RUB'}) %></p>
+    <p><b>sk-SK: sampleNumber.toLocaleString('sk-SK', {style:'currency', currency:'EUR'}) // </b><%= sampleNumber.toLocaleString('sk-SK', {style:'currency', currency:'EUR'}) %></p>
+    <p><b>sv-SE: sampleNumber.toLocaleString('sv-SE', {style:'currency', currency:'SEK'}) // </b><%= sampleNumber.toLocaleString('sv-SE', {style:'currency', currency:'SEK'}) %></p>
+    <p><b>ta-IN: sampleNumber.toLocaleString('ta-IN', {style:'currency', currency:'INR'}) // </b><%= sampleNumber.toLocaleString('ta-IN', {style:'currency', currency:'INR'}) %></p>
+    <p><b>ta-LK: sampleNumber.toLocaleString('ta-LK', {style:'currency', currency:'LKR'}) // </b><%= sampleNumber.toLocaleString('ta-LK', {style:'currency', currency:'LKR'}) %></p>
+    <p><b>th-TH: sampleNumber.toLocaleString('th-TH', {style:'currency', currency:'THB'}) // </b><%= sampleNumber.toLocaleString('th-TH', {style:'currency', currency:'THB'}) %></p>
+    <p><b>tr-TR: sampleNumber.toLocaleString('tr-TR', {style:'currency', currency:'TRY'}) // </b><%= sampleNumber.toLocaleString('tr-TR', {style:'currency', currency:'TRY'}) %></p>
+    <p><b>zh-CN: sampleNumber.toLocaleString('zh-CN', {style:'currency', currency:'CNY'}) // </b><%= sampleNumber.toLocaleString('zh-CN', {style:'currency', currency:'CNY'}) %></p>
+    <p><b>zh-HK: sampleNumber.toLocaleString('zh-HK', {style:'currency', currency:'HKD'}) // </b><%= sampleNumber.toLocaleString('zh-HK', {style:'currency', currency:'HKD'}) %></p>
+    <p><b>zh-TW: sampleNumber.toLocaleString('zh-TW', {style:'currency', currency:'TWD'}) // </b><%= sampleNumber.toLocaleString('zh-TW', {style:'currency', currency:'TWD'}) %></p>
+  * Took me a while to do this. If you see errors with currency symbols, these are errors on your Node or your browser.
+  </body>
+</html>
