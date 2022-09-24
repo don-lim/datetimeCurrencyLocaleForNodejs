@@ -1,5 +1,7 @@
 # Date and Currency Locale Sample Code for Node.js / JavaScript
 
+## Important codes are in /views/index.ejs
+
 Locale code explained
 
 “hi”: Hindi (primary language)
